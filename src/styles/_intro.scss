@@ -1,0 +1,59 @@
+
+.intro {
+  height: 100vh;
+  position: relative;
+
+  &__description {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -60%);
+  
+  }
+
+  &__text {
+  margin-left: 5vw;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: $text-color;
+  }
+
+  &__name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: $special-color;
+  }
+
+  &__img {
+    height: 60vh;
+  }
+}
+
+@media all and (max-width: 890px) {
+  .intro__text {
+    width: 80vw;
+    margin: 3vw auto 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .intro__description {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -60%);
+  }
+  .intro__img {
+    height: 40vh;
+  }
+
+}

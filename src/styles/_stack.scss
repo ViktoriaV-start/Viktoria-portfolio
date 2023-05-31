@@ -1,0 +1,92 @@
+.stack {
+  height: 100vh;
+  position: relative;
+
+  &__header {
+    @include screen-header;
+  }
+
+  &__header-text {
+    @include screen-header-text;
+  }
+
+  &__list {
+    width: 790px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 3rem;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+}
+
+.logo {
+
+  &__js {
+    fill: #f2bf4f;
+  }
+
+  &__react {
+    fill: #5fd2f3;
+  }
+
+  &__php {
+    fill:  #5372a5;
+  }
+
+  &__laravel {
+    fill: #f62c1e;
+  }
+
+  &__docker {
+    fill: #2591e6;
+  }
+
+  &__html {
+    fill:  #dd4b25;
+  }
+
+  &__sass {
+    fill: #c96092;
+  }
+
+  &__css {
+    fill:  #244bdd;
+  }
+
+  &__figma_st0 {
+    fill:#0acf83; 
+  }
+
+  &__figma_st1 {
+    fill:#a259ff; 
+  }
+
+  &__figma_st2 {
+    fill:#f24e1e; 
+  }
+
+  &__figma_st3 {
+    fill:#ff7262; 
+  }
+
+  &__figma_st4 {
+    fill:#1abcfe; 
+  }
+
+  }
+
+  .st0 {
+    fill:#001E36;
+  }
+
+  .st1 {
+    fill:#31A8FF;
+  }
+
+  .cls-1 {
+    fill: #23596b;
+  }

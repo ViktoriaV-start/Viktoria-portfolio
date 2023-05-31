@@ -1,0 +1,58 @@
+$text-color: #31494f;
+$special-color: #4a7989;
+
+@mixin screen-header {
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+@mixin screen-header-text {
+  text-align: center;
+    color: $special-color;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+html,
+body {
+  height: 100%;
+  // background-color: grey;
+  background-color: #edeef5;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@import "header";
+@import "intro";
+@import "about";
+@import "stack";
+
+// #ebf2f4
+// #e5e7e6;
+
+.portfolio, .stack {
+  height: 100vh;
+}
+
+.contact {
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 96vw;
+  min-width: 1140px;
+  max-width: 1600px;
+}
+
+.arrow {
+  position: absolute;
+  fill: $special-color;
+  top: 90%;
+  left: 2%;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  fill: #6e8e99;
+}
+

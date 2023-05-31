@@ -1,0 +1,77 @@
+
+.str0 {
+  stroke: #4a7989;
+  stroke-width: 0.39;
+  stroke-miterlimit: 22.9256;
+}
+
+.fil1 {
+  fill: #FFDBB8
+}
+
+.fil2 {
+  fill: #e6c6a7;
+}
+
+.fil0 {
+  fill:#4a7989
+}
+
+.fil3 {
+  fill:#6e8e99
+}
+
+.fil4 {
+  fill: #3c616d
+}
+
+.svg {
+  margin-left: 2%;
+  shape-rendering:geometricPrecision;
+  text-rendering:geometricPrecision;
+  image-rendering:optimizeQuality;
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+}
+
+.header {
+  display: flex;
+  position: relative;
+
+  &__slogan {
+    align-self: center;
+    margin-left: 1rem;
+    color: #4a7989;;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
+
+  &__item {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4a7989;
+    cursor: pointer;
+    
+  }
+}
+
+@media all and (max-width: 890px) {
+  .nav{
+    width: 40%;
+    transform: translate(-90%, -50%);
+  }
+}
+
+@media all and (max-width: 725px) {
+  .nav{
+   display: none;
+  }
+}
