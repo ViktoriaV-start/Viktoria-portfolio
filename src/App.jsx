@@ -7,6 +7,7 @@ import { About } from './components/About';
 import { Stack } from './components/Stack';
 import { PortfolioI } from './components/PortfolioI';
 import { PortfolioII } from './components/PortfolioII';
+import { PortfolioIII } from './components/PortfolioIII';
 
 
 
@@ -20,6 +21,7 @@ const [slide, setSlide] = useState('');
   const focusStack = useRef(null);
   const focusPortfolioI = useRef(null);
   const focusPortfolioII = useRef(null);
+  const focusPortfolioIII = useRef(null);
   const focusContact = useRef(null);
 
   const handleChangeFocus = (event, elem) => {
@@ -38,20 +40,24 @@ const [slide, setSlide] = useState('');
         <Intro handleChangeFocus={handleChangeFocus} focusAbout={focusAbout} />
       </section>
 
-      <section className="about container" ref={focusAbout}>
+      <section className="about" ref={focusAbout}>
         <About focusStack={focusStack} handleChangeFocus={handleChangeFocus} slide={slide} />
       </section>
 
-      <section className="stack container" ref={focusStack}>
+      <section className="stack" ref={focusStack}>
         <Stack handleChangeFocus={handleChangeFocus} focusPortfolio={focusPortfolioI} slide={slide} />
       </section>
       
-      <section className="portfolio-i container" ref={focusPortfolioI}>
+      <section className="portfolio-i" ref={focusPortfolioI}>
         <PortfolioI handleChangeFocus={handleChangeFocus} focusPortfolioII={focusPortfolioII} slide={slide} />
       </section>
 
-      <section className="portfolio-ii container" ref={focusPortfolioII}>
-        <PortfolioII handleChangeFocus={handleChangeFocus} focusContact={focusContact} slide={slide} />
+      <section className="portfolio-ii" ref={focusPortfolioII}>
+        <PortfolioII handleChangeFocus={handleChangeFocus} focusPortfolioIII={focusPortfolioIII} slide={slide} />
+      </section>
+
+      <section className="portfolio-iii" ref={focusPortfolioIII}>
+        <PortfolioIII handleChangeFocus={handleChangeFocus} focusContact={focusContact} slide={slide} />
       </section>
 
       <section className="contact" ref={focusContact}>

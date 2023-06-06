@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  background-color: #edeef5;
+  background-color: #f8fbff;
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -87,11 +87,7 @@ body {
 .intro__description {
   margin-top: 4rem;
   display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -60%);
+  justify-content: center;
 }
 .intro__text {
   margin-left: 5vw;
@@ -133,17 +129,11 @@ body {
   }
 }
 .about {
-  height: 100vh;
   position: relative;
 }
 .about__presentation {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -60%);
 }
 .about__text {
   width: 60vw;
@@ -157,7 +147,7 @@ body {
   padding-left: 3rem;
 }
 .about__header {
-  padding: 0.5rem;
+  margin-bottom: 4rem;
 }
 .about__header-text {
   text-align: center;
@@ -199,12 +189,11 @@ body {
     padding: 0;
   }
 }
-.stack {
-  height: 100vh;
+.stack__list-wrap {
   position: relative;
 }
 .stack__header {
-  padding: 0.5rem;
+  margin-bottom: 4rem;
 }
 .stack__header-text {
   text-align: center;
@@ -218,10 +207,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 3rem;
   justify-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
+  margin: 0 auto;
 }
 
 .logo__js {
@@ -548,11 +534,6 @@ body {
     opacity: 1;
   }
 }
-.portfolio-i, .portfolio-ii {
-  height: 100vh;
-  position: relative;
-}
-
 .teleport_img-home {
   max-width: 39%;
   max-height: 60vh;
@@ -560,15 +541,15 @@ body {
 
 .teleport_img-appl {
   max-width: 59%;
-  max-height: 68vh;
+  max-height: 60vh;
 }
 
 .brand-img {
-  max-height: 65vh;
+  max-height: 55vh;
 }
 
 .portfolio__header {
-  padding: 0.5rem;
+  margin-bottom: 4rem;
 }
 .portfolio__header-text {
   text-align: center;
@@ -577,17 +558,21 @@ body {
   font-weight: 700;
 }
 .portfolio__wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -55%);
+  margin-top: 3rem;
 }
 .portfolio__text {
-  margin-bottom: 5vh !important;
+  margin-bottom: 3rem !important;
   color: #31494f;
   font-size: 1.5rem;
   text-align: justify;
   font-weight: 600;
+  margin-top: 3rem;
+}
+.portfolio__name {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: #D6B65E;
 }
 .portfolio__images {
   display: flex;
@@ -598,13 +583,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3vh;
-  background-color: aliceblue;
+  margin-top: 3rem;
+  background-color: white;
 }
 .portfolio__stack {
-  color: #31494f;
-  font-size: 1.2rem;
-  font-weight: 500;
+  color: #D6B65E;
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
 .contact {
@@ -619,11 +604,10 @@ body {
 }
 
 .arrow {
-  position: absolute;
   fill: #4a7989;
-  top: 90%;
-  left: 2%;
   cursor: pointer;
+  margin-left: 2%;
+  margin-top: 3rem;
 }
 
 .arrow:hover {
@@ -639,23 +623,4 @@ body {
 
 .icon {
   fill: #31494f;
-}
-
-@media all and (max-height: 835x) {
-  .intro, .about, .stack, .portfolio-i, .portfolio-ii {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .intro__description, .about__presentation, .stack__list, .portfolio__wrap {
-    position: unset;
-    top: 0;
-    left: 0;
-    margin-right: 0;
-    transform: translate(0, 0);
-    justify-content: center;
-  }
-  .arrow {
-    display: none;
-  }
 }/*# sourceMappingURL=index.css.map */

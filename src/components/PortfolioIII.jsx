@@ -1,26 +1,24 @@
 import { brandShopGit, brandShopLink, brandShopPresentation } from "../config/constants"
 
 
-export const PortfolioI = ({ handleChangeFocus, focusPortfolioII, slide }) => {
+export const PortfolioIII = ({ handleChangeFocus, focusContact, slide }) => {
 
   return (
     <>
-    <header className="portfolio__header"><div className="portfolio__header-text">Проекты</div></header>
-    <section className="portfolio__wrap container">
+      <section className="portfolio__wrap container">
       <article className="portfolio__text">
-      <span className="portfolio__name">TELEPORT</span> - Коммерческий проект сайта агента оператора мультисервисной сети связи компании МТТ 
-      по продаже телефонных номеров для бизнеса корпоративным и частным клиентам. Реализовала  front-end/back-end для административной части,
-      логику для внесения заявки в базу данных, занималась проектированием базы данных
+        <span className="portfolio__name">LET'S CHAT</span> - Учебный проект сайта мессенджера, front-end/back-end. Реализовала следующие задачи: выбор товара, добавление товара в корзину, удаление из корзины, изменение количества, аутентификация/регистрация, оформление заказа, внесение изменений в базу данных
       </article>
 
       <div className="portfolio__images">
-        <img className="teleport_img-home portfolio__img" src="/Viktoria-portfolio/img/teleport/teleport-home.png" alt="teleport" />
-        <img className="teleport_img-appl portfolio__img" src="/Viktoria-portfolio/img/teleport/teleport-appl.png" alt="teleport" />
+        <img className="brand-img" src="/Viktoria-portfolio/img/brand/brand-home.png" alt="Brand" />
+        <img className="brand-img" src="/Viktoria-portfolio/img/brand/brand-order.png" alt="Brand" />
+        <img className="brand-img" src="/Viktoria-portfolio/img/brand/brand-db.png" alt="Brand" />
       </div>
 
       <div className="portfolio__info">
         <div className="portfolio__stack">
-          JS/React, PHP/Laravel, SCSS, Redis, MySQL, Docker
+          PHP, JS, SCSS, JS async/await, MySQL, Twig, Api
         </div>
 
         <div className="links">
@@ -34,15 +32,13 @@ export const PortfolioI = ({ handleChangeFocus, focusPortfolioII, slide }) => {
       </div>
 
     </section>
-
+    
     <div className="container">
-      <svg onClick={(ev) => handleChangeFocus(ev, focusPortfolioII)} className="arrow" width='50' height='50' viewBox="0 0 512 512">
+      <svg onClick={(ev) => handleChangeFocus(ev, focusContact)} className="arrow" width='50' height='50' viewBox="0 0 512 512">
         <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM376.9 294.6L269.8 394.5c-3.8 3.5-8.7 5.5-13.8 5.5s-10.1-2-13.8-5.5L135.1 294.6c-4.5-4.2-7.1-10.1-7.1-16.3c0-12.3 10-22.3 22.3-22.3l57.7 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 57.7 0c12.3 0 22.3 10 22.3 22.3c0 6.2-2.6 12.1-7.1 16.3z"/>
       </svg>
     </div>
 
-      
-    </>
+  </>
   )
 }
-

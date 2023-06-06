@@ -2,7 +2,7 @@ $text-color: #31494f;
 $special-color: #4a7989;
 
 @mixin screen-header {
-  padding: 0.5rem;
+  margin-bottom: 4rem;
 }
 
 @mixin screen-header-text {
@@ -15,7 +15,8 @@ $special-color: #4a7989;
 html,
 body {
   height: 100%;
-  background-color: #edeef5;
+  background-color: #f8fbff;
+  //#edeef5;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -39,11 +40,10 @@ body {
 }
 
 .arrow {
-  position: absolute;
   fill: $special-color;
-  top: 90%;
-  left: 2%;
   cursor: pointer;
+  margin-left: 2%;
+  margin-top: 3rem;
 }
 
 .arrow:hover {
@@ -62,24 +62,24 @@ body {
   fill: $text-color;
 }
 
-@media all and (max-height: 835x) {
-.intro, .about, .stack, .portfolio-i, .portfolio-ii {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-} 
-.intro__description, .about__presentation, .stack__list, .portfolio__wrap {
-  position: unset;
-  top: 0;
-  left: 0;
-  margin-right: 0;
-  transform: translate(0, 0);
-  justify-content: center;
+// @media all and (max-height: 835x) {
+// .intro, .about, .stack, .portfolio-i, .portfolio-ii {
+//   height: auto;
+//   display: flex;
+//   flex-direction: column;
+// } 
+// .intro__description, .about__presentation, .stack__list, .portfolio__wrap {
+//   position: unset;
+//   top: 0;
+//   left: 0;
+//   margin-right: 0;
+//   transform: translate(0, 0);
+//   justify-content: center;
 
-}
+// }
 
-.arrow {
-  display: none;
-}
+// .arrow {
+//   display: none;
+// }
 
-}
+// }
