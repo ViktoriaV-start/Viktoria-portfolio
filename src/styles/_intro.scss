@@ -4,8 +4,8 @@
   position: relative;
 
   &__description {
+    margin-top: 4rem;
   display: flex;
-  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,6 +28,10 @@
     font-weight: 900;
     color: $special-color;
   }
+
+  // &__img-wrap {
+  //   padding-top: 14rem;
+  // }
 
   &__img {
     height: 60vh;

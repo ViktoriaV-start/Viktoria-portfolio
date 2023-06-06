@@ -1,15 +1,25 @@
+import { useEffect, useState } from "react";
+import { slLeft, slRight, aboutElem } from "../config/constants";
 
-export const About = ({ handleChangeFocus, focusStack }) => {
+
+export const About = ({ handleChangeFocus, focusStack, slide }) => {
+
+  const [slideLeft, setSlideLeft] = useState('');
+  const [slideRight, setSlideRight] = useState('');
+
+  useEffect(() => {
+    if(slide === aboutElem) {
+      setSlideLeft(slLeft);
+      setSlideRight(slRight);
+    };
+  }, [slide]);
 
   return (
     <>
-      <header className="about__header container"><div className="about__header-text">Обо мне</div></header>
-      <section className="about__presentation container">
-        <div className="about__wrap">
-          {/* <img className="about__img" src="./img/my_photo.jpg" alt="VictoriaPhoto" /> */}
-          <div className="test__img"></div>
-        </div>
-        <article className="about__text">
+      <header className="about__header"><div className="about__header-text">Обо мне</div></header>
+      <section className="about__presentation">
+        
+        <article className={slideLeft + ' about__text'}>
           <p>
             Идея самостоятельно создать сайт с нуля и разместить в интернете волновала меня давно. 
             Именно поэтому 2,5 года я упорно училась на full-stack веб-разработчика и сейчас продолжаю совершенствовать свои знания.
@@ -26,6 +36,12 @@ export const About = ({ handleChangeFocus, focusStack }) => {
             Увлекаюсь фотографией, люблю искусство, аниме и музыку.
           </p>
         </article>
+
+        <div className="about__wrap">
+          <img className={'about__img ' + slideRight } src="/Viktoria-portfolio/img/VV.jpeg" alt="VictoriaPhoto" />
+        </div>
+
+
       </section>
       
       <svg onClick={(ev) => handleChangeFocus(ev, focusStack)} className="arrow" width='50' height='50' viewBox="0 0 512 512">

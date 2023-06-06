@@ -33,13 +33,19 @@
     @include screen-header-text;
   }
 
+  &__img {
+    height: 50vh;
+  }
+
+
 }
 
-.test__img {
-  height: 50vh;
-  width: 367px;
-  background-color: aqua;
-}
+// .test__img {
+//   height: 50vh;
+//   // width: 367px;
+//   background-color: aqua;
+// }
+
 
 @media all and (max-width: 1139px) {
   .about__text {

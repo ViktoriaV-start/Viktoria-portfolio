@@ -5,7 +5,8 @@ export const Header = ({ handleChangeFocus, focusAbout, focusStack }) => {
   return (
     <header className="header">
 
-      <svg className="svg" width="71px" height="88px" viewBox="0 0 17.7 21.45">
+      <div className="header__logo">
+      <svg className="svg" viewBox="0 0 17.7 21.45">
         <g id="Слой_x0020_1">
           <metadata id="CorelCorpID_0Corel-Layer"/>
           <g id="_936036768">
@@ -21,8 +22,8 @@ export const Header = ({ handleChangeFocus, focusAbout, focusStack }) => {
           </g>
         </g>
       </svg>
-
       <span className="header__slogan">Hello, World!</span>
+      </div>
 
       <nav className="nav">
         <span className="nav__item" onClick={(ev) => handleChangeFocus(ev, focusAbout)}>Обо мне</span>

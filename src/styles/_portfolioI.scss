@@ -1,0 +1,68 @@
+.portfolio-i, .portfolio-ii {
+  height: 100vh;
+  position: relative;
+}
+
+.teleport_img-home {
+  // height: 58vh;
+  max-width: 39%;
+  max-height: 60vh;
+}
+.teleport_img-appl {
+  // height: 48vh;
+  max-width: 59%;
+  max-height: 68vh;
+}
+
+.brand-img {
+  max-height: 65vh;
+
+}
+
+.portfolio {
+
+  &__header {
+    @include screen-header;
+  }
+
+  &__header-text {
+    @include screen-header-text;
+  }
+
+  &__wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+  }
+
+  &__text {
+    margin-bottom: 5vh !important;
+    color: $text-color;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: 600;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+    background-color: aliceblue;
+  }
+
+  &__stack {
+    color: $text-color;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+

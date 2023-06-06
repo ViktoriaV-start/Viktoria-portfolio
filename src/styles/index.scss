@@ -2,7 +2,6 @@ $text-color: #31494f;
 $special-color: #4a7989;
 
 @mixin screen-header {
-  margin: 0 auto;
   padding: 0.5rem;
 }
 
@@ -16,7 +15,6 @@ $special-color: #4a7989;
 html,
 body {
   height: 100%;
-  // background-color: grey;
   background-color: #edeef5;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -25,13 +23,9 @@ body {
 @import "intro";
 @import "about";
 @import "stack";
+@import "slide";
+@import "portfolioI";
 
-// #ebf2f4
-// #e5e7e6;
-
-.portfolio, .stack {
-  height: 100vh;
-}
 
 .contact {
   height: 100vh;
@@ -39,7 +33,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 96vw;
+  width: 1140px;
   min-width: 1140px;
   max-width: 1600px;
 }
@@ -56,3 +50,36 @@ body {
   fill: #6e8e99;
 }
 
+.links {
+  display: flex;
+
+  &__item {
+    padding: 0 1rem;
+  }
+}
+
+.icon {
+  fill: $text-color;
+}
+
+@media all and (max-height: 835x) {
+.intro, .about, .stack, .portfolio-i, .portfolio-ii {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+} 
+.intro__description, .about__presentation, .stack__list, .portfolio__wrap {
+  position: unset;
+  top: 0;
+  left: 0;
+  margin-right: 0;
+  transform: translate(0, 0);
+  justify-content: center;
+
+}
+
+.arrow {
+  display: none;
+}
+
+}
