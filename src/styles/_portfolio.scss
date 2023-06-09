@@ -1,0 +1,77 @@
+.portfolio {
+  background-color: #FFF9F0;
+
+.teleport_img-appl {
+  margin-top: 2rem;
+}
+
+.brand-img {
+  padding-top: 1rem;
+}
+
+  &__header {
+    @include screen-header-text;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem !important;
+  }
+
+  &__text {
+    color: $text-color;
+    font-size: 1.1rem;
+    text-align: justify;
+    font-weight: 300;
+    width: 58%;
+  }
+
+  &__name {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #D6B65E
+    //#4A9680
+    //#D6B65E
+    //#4FA19F
+  }
+
+  &__brief, &__task {
+    color: #4a7989;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__img {
+    width: 440px;
+  }
+
+  &__info-wrap {
+    background-color: #FFF9F0;
+    //#FFFAE3
+    //#FFF9F0
+    // #e2f8ff;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0 3rem;
+  }
+
+  &__stack {
+    color: #D6B65E;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+}
+

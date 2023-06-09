@@ -1,24 +1,57 @@
 import { brandShopGit, brandShopLink, brandShopPresentation } from "../config/constants"
+import { Point } from "./Point"
 
 
-export const PortfolioII = ({ handleChangeFocus, focusPortfolioIII, slide }) => {
+export const PortfolioII = () => {
 
   return (
     <>
+    <div className="portfolio">
       <section className="portfolio__wrap container">
-      <article className="portfolio__text">
-        <span className="portfolio__name">BRAND</span> - Учебный проект сайта интернет-магазина, front-end/back-end. Реализовала следующие задачи: выбор товара, добавление товара в корзину, удаление из корзины, изменение количества, аутентификация/регистрация, оформление заказа, внесение изменений в базу данных
-      </article>
+        <article className="portfolio__text">
+          <p><span className="portfolio__name">BRAND</span><span className="portfolio__brief"> Интернет-магазин, учебный проект</span></p>
+          <p>
+            Сайт интернет-магазина с возможность приобретения выбранного товара.
+          </p>
+         <p>
+          На сайте клиент имеет возможность просматривать доступный товар, искать по названию, увидеть характеристики товара,
+          выбрать и оформить заказ, зарегистрироваться или войти на сайт, как постоянных покупатель.
+          </p>
+          <p>На проекте играла роль frontend/backend-разработчика.</p>
+          <div className="portfolio__task">Мои задачи:</div>
+          <div>
+            <Point />
+            <span>Реализовала загрузку из базы данных и отображение товаров на страницах, добавление товара в корзину без перезагрузки страницы с использованием asyncJS;</span>
+          </div>
+          <div className="mt03">
+            <Point />
+            <span>Добавила возможность удаления товара из корзины, изменения количества с фиксацией изменений в базе данных,
+                подсчет общей стоимости одного типа товара в корзине и итоговой цены всех товаров, отображение количества товара в корзине;</span>
+          </div>
+          <div className="mt03">
+            <Point />
+            <span>Добавила поиск товара по названию;</span>
+          </div>
+          <div className="mt03">
+            <Point />
+            <span>Разработала систему аутентификации пользователя и регистрации нового пользователя, вход/выход в личный кабинет;</span>
+          </div>
+          <div className="mt03">
+            <Point />
+            <span>Реализовала оформление заказа с внесением необходимых изменений в базу данных с присвоением заказу уникального номера</span>
+          </div>
+        </article>
 
-      <div className="portfolio__images">
-        <img className="brand-img" src="/Viktoria-portfolio/img/brand/brand-home.png" alt="Brand" />
-        <img className="brand-img" src="/Viktoria-portfolio/img/brand/brand-order.png" alt="Brand" />
-        <img className="brand-img" src="/Viktoria-portfolio/img/brand/brand-db.png" alt="Brand" />
-      </div>
+        <div className="portfolio__images">
+          <img className="brand-img portfolio__img" src="/Viktoria-portfolio/img/brand/brand-home.png" alt="Brand" />
+        </div>
+      </section>
+    </div>
 
-      <div className="portfolio__info">
+    <div className="portfolio__info-wrap">
+      <div className="portfolio__info container">
         <div className="portfolio__stack">
-          PHP, JS, SCSS, JS async/await, MySQL, Twig, Api
+          PHP, JS, HTML, SCSS, JS async/await, MySQL, Twig
         </div>
 
         <div className="links">
@@ -31,14 +64,7 @@ export const PortfolioII = ({ handleChangeFocus, focusPortfolioIII, slide }) => 
         </div>
       </div>
 
-    </section>
-    
-    <div className="container">
-      <svg onClick={(ev) => handleChangeFocus(ev, focusPortfolioIII)} className="arrow" width='50' height='50' viewBox="0 0 512 512">
-        <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM376.9 294.6L269.8 394.5c-3.8 3.5-8.7 5.5-13.8 5.5s-10.1-2-13.8-5.5L135.1 294.6c-4.5-4.2-7.1-10.1-7.1-16.3c0-12.3 10-22.3 22.3-22.3l57.7 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 57.7 0c12.3 0 22.3 10 22.3 22.3c0 6.2-2.6 12.1-7.1 16.3z"/>
-      </svg>
     </div>
-
   </>
   )
 }

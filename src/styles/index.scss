@@ -7,15 +7,15 @@ $special-color: #4a7989;
 
 @mixin screen-header-text {
   text-align: center;
-    color: $special-color;
-    font-size: 3rem;
-    font-weight: 700;
+  color: $special-color;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 html,
 body {
   height: 100%;
-  background-color: #f8fbff;
+  background-color: #ffffff;
   //#edeef5;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -25,7 +25,8 @@ body {
 @import "about";
 @import "stack";
 @import "slide";
-@import "portfolioI";
+@import "portfolio";
+@import "contact";
 
 
 .contact {
@@ -62,24 +63,23 @@ body {
   fill: $text-color;
 }
 
-// @media all and (max-height: 835x) {
-// .intro, .about, .stack, .portfolio-i, .portfolio-ii {
-//   height: auto;
-//   display: flex;
-//   flex-direction: column;
-// } 
-// .intro__description, .about__presentation, .stack__list, .portfolio__wrap {
-//   position: unset;
-//   top: 0;
-//   left: 0;
-//   margin-right: 0;
-//   transform: translate(0, 0);
-//   justify-content: center;
+.point {
+  vertical-align: bottom;
+  margin-right: 1rem;
+  width: 20px;
+}
 
-// }
+.point-small {
+  vertical-align: middle;
+  margin-right: 1rem;
+  width: 12px;
+}
 
-// .arrow {
-//   display: none;
-// }
+.mt10 {
+  margin-top: 10rem;
+}
+.mt03 {
+  margin-top: 0.3rem;
+}
 
-// }
+

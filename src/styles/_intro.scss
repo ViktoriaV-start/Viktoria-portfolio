@@ -25,35 +25,7 @@
     color: $special-color;
   }
 
-  // &__img-wrap {
-  //   padding-top: 14rem;
-  // }
-
   &__img {
     height: 60vh;
   }
-}
-
-@media all and (max-width: 890px) {
-  .intro__text {
-    width: 80vw;
-    margin: 3vw auto 0 auto;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-  .intro__description {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -60%);
-  }
-  .intro__img {
-    height: 40vh;
-  }
-
 }

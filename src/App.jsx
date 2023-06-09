@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import './App.css';
 
 import { Header } from './components/Header';
@@ -8,65 +8,65 @@ import { Stack } from './components/Stack';
 import { PortfolioI } from './components/PortfolioI';
 import { PortfolioII } from './components/PortfolioII';
 import { PortfolioIII } from './components/PortfolioIII';
+import { Contact } from './components/Contact';
 
 
 
 
 export const App = () => {
 
-const [slide, setSlide] = useState('');
-
+  const [slide, setSlide] = useState('');
 
   const focusAbout = useRef(null);
   const focusStack = useRef(null);
-  const focusPortfolioI = useRef(null);
-  const focusPortfolioII = useRef(null);
-  const focusPortfolioIII = useRef(null);
+  const focusPortfolio = useRef(null);
   const focusContact = useRef(null);
 
   const handleChangeFocus = (event, elem) => {
     elem.current.scrollIntoView({
       behavior: 'smooth',
-      block: 'nearest',
-      inline: 'start'
+      block: 'center',
+      inline: 'nearest'
     });
     setSlide(elem.current.className);
   }
 
   return (
     <>
+
+      <Header handleChangeFocus={handleChangeFocus}
+              focusAbout={focusAbout}
+              focusStack={focusStack}
+              focusPortfolio={focusPortfolio}
+              focusContact={focusContact}
+      />
       <section className="intro container">
-        <Header handleChangeFocus={handleChangeFocus} focusAbout={focusAbout} focusStack={focusStack} />
         <Intro handleChangeFocus={handleChangeFocus} focusAbout={focusAbout} />
       </section>
 
       <section className="about" ref={focusAbout}>
-        <About focusStack={focusStack} handleChangeFocus={handleChangeFocus} slide={slide} />
+        <About slide={slide} />
       </section>
 
       <section className="stack" ref={focusStack}>
-        <Stack handleChangeFocus={handleChangeFocus} focusPortfolio={focusPortfolioI} slide={slide} />
+        <Stack handleChangeFocus={handleChangeFocus} slide={slide} />
       </section>
       
-      <section className="portfolio-i" ref={focusPortfolioI}>
-        <PortfolioI handleChangeFocus={handleChangeFocus} focusPortfolioII={focusPortfolioII} slide={slide} />
+      <section className="portfolio-i">
+        <PortfolioI focusPortfolio={focusPortfolio} />
       </section>
 
-      <section className="portfolio-ii" ref={focusPortfolioII}>
-        <PortfolioII handleChangeFocus={handleChangeFocus} focusPortfolioIII={focusPortfolioIII} slide={slide} />
+      <section className="portfolio-ii">
+        <PortfolioII />
       </section>
 
-      <section className="portfolio-iii" ref={focusPortfolioIII}>
-        <PortfolioIII handleChangeFocus={handleChangeFocus} focusContact={focusContact} slide={slide} />
+      <section className="portfolio-iii">
+        <PortfolioIII />
       </section>
 
-      <section className="contact" ref={focusContact}>
-        <div className="container">
-          Contacts
-        </div>
+      <section className="contact" >
+        <Contact focusContact={focusContact} />
       </section>
     </>
   );
 }
-
-

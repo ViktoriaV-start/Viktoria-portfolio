@@ -40,6 +40,14 @@
   display: flex;
   justify-content: space-between;
 
+  &__wrap{
+  position: sticky;
+  top: 0;
+  overflow: scroll;
+  background-color: aliceblue;
+  z-index: 5;
+  }
+
   &__slogan {
 
     margin-left: 1rem;
@@ -65,18 +73,5 @@
     color: #4a7989;
     cursor: pointer;
     
-  }
-}
-
-@media all and (max-width: 890px) {
-  .nav{
-    width: 40%;
-    transform: translate(-90%, -50%);
-  }
-}
-
-@media all and (max-width: 725px) {
-  .nav{
-   display: none;
   }
 }

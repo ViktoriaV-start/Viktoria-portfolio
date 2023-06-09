@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  background-color: #f8fbff;
+  background-color: #ffffff;
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -46,6 +46,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header__wrap {
+  position: sticky;
+  top: 0;
+  overflow: scroll;
+  background-color: aliceblue;
+  z-index: 5;
+}
 .header__slogan {
   margin-left: 1rem;
   color: #4a7989;
@@ -69,17 +76,6 @@ body {
   cursor: pointer;
 }
 
-@media all and (max-width: 890px) {
-  .nav {
-    width: 40%;
-    transform: translate(-90%, -50%);
-  }
-}
-@media all and (max-width: 725px) {
-  .nav {
-    display: none;
-  }
-}
 .intro {
   height: 100vh;
   position: relative;
@@ -106,28 +102,6 @@ body {
   height: 60vh;
 }
 
-@media all and (max-width: 890px) {
-  .intro__text {
-    width: 80vw;
-    margin: 3vw auto 0 auto;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-  .intro__description {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -60%);
-  }
-  .intro__img {
-    height: 40vh;
-  }
-}
 .about {
   position: relative;
 }
@@ -159,36 +133,6 @@ body {
   height: 50vh;
 }
 
-@media all and (max-width: 1139px) {
-  .about__text {
-    width: 80vw;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0;
-  }
-  .about__presentation {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -60%);
-  }
-  .about__img, .test__img {
-    height: 35vh;
-    width: 250px;
-  }
-  .about__header {
-    left: 2%;
-    top: 0%;
-    transform: translate(0);
-  }
-  .about__wrap {
-    padding: 0;
-  }
-}
 .stack__list-wrap {
   position: relative;
 }
@@ -331,8 +275,8 @@ body {
   }
 }
 .slide-in-top {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /**
@@ -365,8 +309,8 @@ body {
   }
 }
 .slide-in-tr {
-  -webkit-animation: slide-in-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-tr 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-tr 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /**
@@ -399,8 +343,8 @@ body {
   }
 }
 .slide-in-tl {
-  -webkit-animation: slide-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-tl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-tl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /**
@@ -433,8 +377,8 @@ body {
   }
 }
 .slide-in-br {
-  -webkit-animation: slide-in-br 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-br 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-br 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-br 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /**
@@ -467,8 +411,8 @@ body {
   }
 }
 .slide-in-bl {
-  -webkit-animation: slide-in-bl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-bl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-bl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /**
@@ -501,8 +445,8 @@ body {
   }
 }
 .slide-in-bottom {
-  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /**
@@ -534,62 +478,84 @@ body {
     opacity: 1;
   }
 }
-.teleport_img-home {
-  max-width: 39%;
-  max-height: 60vh;
+.portfolio {
+  background-color: #FFF9F0;
 }
-
-.teleport_img-appl {
-  max-width: 59%;
-  max-height: 60vh;
+.portfolio .teleport_img-appl {
+  margin-top: 2rem;
 }
-
-.brand-img {
-  max-height: 55vh;
+.portfolio .brand-img {
+  padding-top: 1rem;
 }
-
 .portfolio__header {
-  margin-bottom: 4rem;
-}
-.portfolio__header-text {
   text-align: center;
   color: #4a7989;
   font-size: 3rem;
   font-weight: 700;
 }
 .portfolio__wrap {
-  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem !important;
 }
 .portfolio__text {
-  margin-bottom: 3rem !important;
   color: #31494f;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-align: justify;
-  font-weight: 600;
-  margin-top: 3rem;
+  font-weight: 300;
+  width: 58%;
 }
 .portfolio__name {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
   color: #D6B65E;
 }
+.portfolio__brief, .portfolio__task {
+  color: #4a7989;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
 .portfolio__images {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.portfolio__img {
+  width: 440px;
+}
+.portfolio__info-wrap {
+  background-color: #FFF9F0;
 }
 .portfolio__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3rem;
-  background-color: white;
+  padding: 3rem 0 3rem;
 }
 .portfolio__stack {
   color: #D6B65E;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 800;
+}
+
+.contact {
+  text-align: center;
+}
+.contact__text {
+  font-size: 1.8rem;
+  color: #4a7989;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+.contact__email {
+  font-size: 3rem;
+  color: #4a7989;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  margin-top: 4rem;
 }
 
 .contact {
@@ -623,4 +589,24 @@ body {
 
 .icon {
   fill: #31494f;
+}
+
+.point {
+  vertical-align: bottom;
+  margin-right: 1rem;
+  width: 20px;
+}
+
+.point-small {
+  vertical-align: middle;
+  margin-right: 1rem;
+  width: 12px;
+}
+
+.mt10 {
+  margin-top: 10rem;
+}
+
+.mt03 {
+  margin-top: 0.3rem;
 }/*# sourceMappingURL=index.css.map */
