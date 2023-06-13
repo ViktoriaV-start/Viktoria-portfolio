@@ -87,9 +87,13 @@ body {
     min-width: 250px;
   }
 
-  .arrow {
-    margin-top: 0;
-  }
+}
 
+@media all and (max-width: 575.9px) {
+  .intro {
+    .arrow {
+      margin-top: 0;
+    }
+  }
 }
 

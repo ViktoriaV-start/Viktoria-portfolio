@@ -48,11 +48,21 @@
       text-align: center;
       margin-left: 0;
       margin-top: 2rem;
-      font-size: 1.1rem;
     }
 
+  }
+}
+
+@media all and (max-width: 575.9px) {
+  .intro {
+    height: auto;
     &__name {
       font-size: 1.5rem;
     }
+
+    &__text {
+      font-size: 1.1rem;
+    }
+
   }
 }
