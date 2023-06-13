@@ -5,6 +5,144 @@ body {
   font-family: "JetBrains Mono", monospace;
 }
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .str0 {
   stroke: #4a7989;
   stroke-width: 0.39;
@@ -82,7 +220,7 @@ body {
 .nav__dropdown {
   position: relative;
   display: inline-block;
-  padding-right: 2%;
+  padding-right: 1rem;
   padding-left: 70px;
 }
 .nav__dropdown-content {
@@ -91,9 +229,9 @@ body {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
+  padding: 1rem 1rem 2rem 1rem;
   z-index: 1;
-  right: 0;
+  right: 1rem;
   text-align: end;
   cursor: pointer;
   color: #31494f;
@@ -101,6 +239,9 @@ body {
 }
 .nav__dropdown:hover .nav__dropdown-content {
   display: block;
+}
+.nav__dropdown-item {
+  margin-top: 1rem;
 }
 
 @media all and (max-width: 1139.9px) {
@@ -128,15 +269,21 @@ body {
   text-align: justify;
   font-size: 1.5rem;
   color: #31494f;
+  line-height: 1.2;
+}
+.intro__text-item {
+  margin-top: 1rem;
 }
 .intro__name {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: 900;
   color: #4a7989;
+  margin: 3rem 0;
 }
 .intro__img {
-  height: 60vh;
+  max-height: 60vh;
+  max-width: 456px;
 }
 
 @media all and (max-width: 1139.9px) {
@@ -179,6 +326,10 @@ body {
   text-align: justify;
   font-size: 1.2rem;
   color: #31494f;
+  line-height: 1.4;
+}
+.about__text-item {
+  margin-top: 1rem;
 }
 .about__wrap {
   padding-left: 3rem;
@@ -568,6 +719,7 @@ body {
   text-align: justify;
   font-weight: 300;
   width: 58%;
+  line-height: 1.4;
 }
 .portfolio__name {
   font-size: 2.5rem;
@@ -682,6 +834,6 @@ body {
 }
 @media all and (max-width: 575.9px) {
   .intro .arrow {
-    margin-top: 0;
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */

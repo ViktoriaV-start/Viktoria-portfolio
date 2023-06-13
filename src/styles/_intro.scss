@@ -7,6 +7,7 @@
   margin-top: 4rem;
   display: flex;
   justify-content: center;
+
   }
 
   &__text {
@@ -15,6 +16,11 @@
   text-align: justify;
   font-size: 1.5rem;
   color: $text-color;
+  line-height: 1.2;
+  }
+
+  &__text-item {
+    margin-top: 1rem;
   }
 
   &__name {
@@ -22,10 +28,12 @@
     font-size: 3rem;
     font-weight: 900;
     color: $special-color;
+    margin: 3rem 0;
   }
 
   &__img {
-    height: 60vh;
+    max-height: 60vh;
+    max-width: 456px;
   }
 }
 

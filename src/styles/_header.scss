@@ -83,7 +83,7 @@
   &__dropdown {
     position: relative;
     display: inline-block;
-    padding-right: 2%;
+    padding-right: 1rem;
     padding-left: 70px;
   }
 
@@ -93,9 +93,9 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    padding: 1rem 1rem 2rem 1rem;
     z-index: 1;
-    right: 0;
+    right: 1rem;
     text-align: end;
     cursor: pointer;
     color: $text-color;
@@ -104,6 +104,10 @@
 
   &__dropdown:hover &__dropdown-content {
     display: block;
+  }
+
+  &__dropdown-item {
+    margin-top: 1rem;
   }
 }
 

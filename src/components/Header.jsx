@@ -42,10 +42,10 @@ export const Header = ({
         <div class="nav__dropdown">
         <svg class="nav__dropdown-icon" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
           <div class="nav__dropdown-content">
-            <p onClick={(ev) => handleChangeFocus(ev, focusAbout)}>Обо мне</p>
-            <p onClick={(ev) => handleChangeFocus(ev, focusStack)}>Инструменты</p>
-            <p onClick={(ev) => handleChangeFocus(ev, focusPortfolio)}>Проекты</p>
-            <p onClick={(ev) => handleChangeFocus(ev, focusContact)}>Контакты</p>
+            <p class="nav__dropdown-item" onClick={(ev) => handleChangeFocus(ev, focusAbout)}>Обо мне</p>
+            <p class="nav__dropdown-item" onClick={(ev) => handleChangeFocus(ev, focusStack)}>Инструменты</p>
+            <p class="nav__dropdown-item" onClick={(ev) => handleChangeFocus(ev, focusPortfolio)}>Проекты</p>
+            <p class="nav__dropdown-item" onClick={(ev) => handleChangeFocus(ev, focusContact)}>Контакты</p>
           </div>
         </div>
       </div>

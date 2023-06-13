@@ -13,6 +13,11 @@
     text-align: justify;
     font-size: 1.2rem;
     color: $text-color;
+    line-height: 1.4;
+  }
+
+  &__text-item {
+    margin-top: 1rem;
   }
 
   &__wrap {

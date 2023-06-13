@@ -20,6 +20,7 @@ body {
   font-family: 'JetBrains Mono', monospace;
 }
 
+@import "norm";
 @import "header";
 @import "intro";
 @import "about";
@@ -92,7 +93,7 @@ body {
 @media all and (max-width: 575.9px) {
   .intro {
     .arrow {
-      margin-top: 0;
+      display: none;
     }
   }
 }

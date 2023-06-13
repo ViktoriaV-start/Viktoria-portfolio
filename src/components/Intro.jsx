@@ -11,7 +11,7 @@ export const Intro = ({ handleChangeFocus, focusAbout }) => {
           <div>Привет! Меня зовут </div>
           <p className="intro__name">Виктория Васильева</p>
           <p>Я - Junior Веб-разработчик.</p>
-          <p>Это презентация обо мне и моих работах</p>
+          <p className="intro__text-item">Это презентация обо мне и моих работах</p>
         </article>
       </section>
       
@@ -21,7 +21,5 @@ export const Intro = ({ handleChangeFocus, focusAbout }) => {
       </svg>
       </div>
   </>
-        
-
   )
 };
