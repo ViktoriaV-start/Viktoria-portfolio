@@ -45,6 +45,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__wrap {
   position: sticky;
@@ -74,7 +75,44 @@ body {
   color: #4a7989;
   cursor: pointer;
 }
+.nav__dropdown-icon {
+  width: 2rem;
+  fill: #4a7989;
+}
+.nav__dropdown {
+  position: relative;
+  display: inline-block;
+  padding-right: 2%;
+  padding-left: 70px;
+}
+.nav__dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  right: 0;
+  text-align: end;
+  cursor: pointer;
+  color: #31494f;
+  font-weight: 200;
+}
+.nav__dropdown:hover .nav__dropdown-content {
+  display: block;
+}
 
+@media all and (max-width: 1139.9px) {
+  .nav {
+    display: none;
+  }
+}
+@media all and (min-width: 1140px) {
+  .nav__dropdown {
+    display: none;
+  }
+}
 .intro {
   height: 100vh;
   position: relative;
@@ -101,6 +139,21 @@ body {
   height: 60vh;
 }
 
+@media all and (max-width: 1139.9px) {
+  .intro__description {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .intro__img {
+    height: 35vh;
+  }
+  .intro__text {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
 .about {
   position: relative;
 }
@@ -608,4 +661,11 @@ body {
 
 .mt03 {
   margin-top: 0.3rem;
+}
+
+@media all and (max-width: 1139.9px) {
+  .container {
+    width: 96vw;
+    min-width: 250px;
+  }
 }/*# sourceMappingURL=index.css.map */

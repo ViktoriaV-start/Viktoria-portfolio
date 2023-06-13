@@ -4,10 +4,9 @@
   position: relative;
 
   &__description {
-    margin-top: 4rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
-  
   }
 
   &__text {
@@ -27,5 +26,28 @@
 
   &__img {
     height: 60vh;
+  }
+}
+
+@media all and (max-width: 1139.9px) {
+
+  .intro {
+    
+    &__description {
+      flex-direction: column;
+      align-items: center;
+    margin-top: 2rem;
+
+    }
+
+    &__img {
+      height: 35vh;
+    }
+
+    &__text {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 2rem;
+    }
   }
 }

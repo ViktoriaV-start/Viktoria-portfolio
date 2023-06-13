@@ -81,5 +81,11 @@ body {
 .mt03 {
   margin-top: 0.3rem;
 }
+@media all and (max-width: 1139.9px) {
+  .container {
+    width: 96vw;
+    min-width: 250px;
+  }
 
+}
 
