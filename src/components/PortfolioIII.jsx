@@ -19,32 +19,32 @@ return (
         </p>
         <p>На проекте играла роль frontend/backend-разработчика.</p>
         <div className="portfolio__task">Мои задачи:</div>
-        <div>
+        <div className="portfolio__task-item">
           <Point />
           <span>Реализовала мессенджер с чатами;</span>
         </div>
-        <div className="mt03">
+        <div className="mt03 portfolio__task-item">
           <Point />
           <span>Добавила возможность переключения между страницами чатов и добавление/удаление новых чатов;</span>
         </div>
-        <div className="mt03">
+        <div className="mt03 portfolio__task-item">
           <Point />
           <span>Подключила страницу с данными, полученными через API;</span>
         </div>
-        <div className="mt03">
+        <div className="mt03 portfolio__task-item">
           <Point />
           <span>Добавила систему аутентификации пользователя и регистрации нового пользователя, вход/выход в личный кабинет</span>
         </div>
         <div className="portfolio__task mt03">Особенности:</div>
-        <div>
+        <div className="portfolio__task-item">
           <PointSmall />
           <span>Использовала Firebase для аутентификации/регистрации пользователя;</span>
         </div>
-        <div className="mt03">
+        <div className="mt03 portfolio__task-item">
           <PointSmall />
           <span>Использовала Realtime Database Firebase для хранения данных чатов и сообщений, а также данных о пользователях;</span>
         </div>
-        <div className="mt03">
+        <div className="mt03 portfolio__task-item">
           <PointSmall />
           <span>Добавила возможность изменения темы страницы с сообщениями</span>
         </div>

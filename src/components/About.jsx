@@ -37,7 +37,7 @@ export const About = ({ slide }) => {
           </p>
         </article>
 
-        <div className="about__wrap">
+        <div className="about__wrap-img">
           <img className={'about__img ' + slideRight } src="/Viktoria-portfolio/img/VV.jpeg" alt="VictoriaPhoto" />
         </div>
 

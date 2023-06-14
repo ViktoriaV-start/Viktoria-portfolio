@@ -19,24 +19,24 @@ export const PortfolioII = () => {
           </p>
           <p>На проекте играла роль frontend/backend-разработчика.</p>
           <div className="portfolio__task">Мои задачи:</div>
-          <div>
+          <div className="portfolio__task-item">
             <Point />
             <span>Реализовала загрузку из базы данных и отображение товаров на страницах, добавление товара в корзину без перезагрузки страницы с использованием asyncJS;</span>
           </div>
-          <div className="mt03">
+          <div className="mt03 portfolio__task-item">
             <Point />
             <span>Добавила возможность удаления товара из корзины, изменения количества с фиксацией изменений в базе данных,
                 подсчет общей стоимости одного типа товара в корзине и итоговой цены всех товаров, отображение количества товара в корзине;</span>
           </div>
-          <div className="mt03">
+          <div className="mt03 portfolio__task-item">
             <Point />
             <span>Добавила поиск товара по названию;</span>
           </div>
-          <div className="mt03">
+          <div className="mt03 portfolio__task-item">
             <Point />
             <span>Разработала систему аутентификации пользователя и регистрации нового пользователя, вход/выход в личный кабинет;</span>
           </div>
-          <div className="mt03">
+          <div className="mt03 portfolio__task-item">
             <Point />
             <span>Реализовала оформление заказа с внесением необходимых изменений в базу данных с присвоением заказу уникального номера</span>
           </div>

@@ -20,7 +20,7 @@
     margin-top: 1rem;
   }
 
-  &__wrap {
+  &__wrap-img {
     padding-left: 3rem;
   }
 
@@ -38,3 +38,35 @@
 
 }
 
+@media all and (max-width: 767.9px) {
+  .about {
+    &__header {
+      margin: 4rem 0 2rem;
+    }
+
+    &__presentation {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__text {
+      width: 80vw;
+      padding: 0;
+  }
+
+  &__wrap-img {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  &__img {
+    height: auto;
+    max-width: 60vw;
+  }
+
+  &__header-text {
+    font-size: 2.5rem;
+  }
+}
+
+}
