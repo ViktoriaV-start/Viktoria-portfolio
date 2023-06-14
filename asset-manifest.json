@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Viktoria-portfolio/static/css/main.3bb42a44.css",
+    "main.css": "/Viktoria-portfolio/static/css/main.6683360e.css",
     "main.js": "/Viktoria-portfolio/static/js/main.9fdd6a67.js",
     "index.html": "/Viktoria-portfolio/index.html",
-    "main.3bb42a44.css.map": "/Viktoria-portfolio/static/css/main.3bb42a44.css.map",
+    "main.6683360e.css.map": "/Viktoria-portfolio/static/css/main.6683360e.css.map",
     "main.9fdd6a67.js.map": "/Viktoria-portfolio/static/js/main.9fdd6a67.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bb42a44.css",
+    "static/css/main.6683360e.css",
     "static/js/main.9fdd6a67.js"
   ]
 }
