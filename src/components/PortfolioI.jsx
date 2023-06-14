@@ -28,27 +28,27 @@ export const PortfolioI = ({ focusPortfolio }) => {
         дизайнер, верстальщик, frontend-разработчик, backend-разработчик.
       </p>
       <div className="portfolio__task">Мои задачи:</div>
-      <div>
+      <div className="portfolio__task-item">
         <Point />
         <span>реализовала страницу заявок (административная часть, front/backend): получение списка заявок из БД, пагинация, сортировка, поиск, оформление страницы;</span>
       </div>
-      <div className="mt03">
+      <div className="mt03 portfolio__task-item">
         <Point /> 
         <span> разработала страницу добавления нового сотрудника (административная часть, front/backend) с логикой для внесения в БД, валидацией, оформление страницы;</span>
       </div>
-      <div className="mt03">
+      <div className="mt03 portfolio__task-item">
         <Point />
         <span>реализовала логику для внесения новой заявки в БД (backend);</span>
       </div>
-      <div className="mt03">
+      <div className="mt03 portfolio__task-item">
         <Point />
         <span>принимала участие в разработке БД;</span>
       </div>
-      <div className="mt03">
+      <div className="mt03 portfolio__task-item">
         <Point />
         <span>создала ряд общих компонентов, используемых на различных страницах;</span>
       </div>
-      <div className="mt03">
+      <div className="mt03 portfolio__task-item">
         <Point />
         <span>Исполняла обязанности скрам-менеджера: готовила бэклоги спринтов и отчеты о проделанной работе, решала организационные вопросы на разных этапах,
         нашла дизайнера и коммуницировала с ним по поводу макета, организовывала встречи и коммуникации между разработчиками</span>

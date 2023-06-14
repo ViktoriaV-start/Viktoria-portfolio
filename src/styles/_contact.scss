@@ -16,3 +16,19 @@
     margin-top: 4rem;
   }
 }
+
+@media all and (max-width: 767.9px) {
+  .contact {
+    width: 80vw;
+    margin: 0 auto;
+
+    &__email{
+    font-size: 1.5rem;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+    }
+
+  }
+}

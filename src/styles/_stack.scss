@@ -22,7 +22,16 @@
   }
 }
 
+.logo-nd {
+  width: 9rem;
+}
+
+.logo-ps {
+  height: 5rem;
+}
+
 .logo {
+  height: 6rem;
 
   &__js {
     fill: #f2bf4f;
@@ -75,7 +84,6 @@
   &__figma_st4 {
     fill:#1abcfe; 
   }
-
   }
 
   .st0 {
@@ -88,4 +96,31 @@
 
   .cls-1 {
     fill: #23596b;
+  }
+
+  @media all and (max-width: 767.9px) {
+    .stack {
+      &__header{
+        margin: 4rem 0 2rem !important;
+      }
+
+      &__header-text {
+        font-size: 2.5rem;
+      }
+
+      &__list {
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 2rem;
+      }
+    }
+
+    .logo, .logo-ps {
+      height: 3rem;
+    }
+
+    .logo-nd {
+      width: 6rem;
+    }
   }

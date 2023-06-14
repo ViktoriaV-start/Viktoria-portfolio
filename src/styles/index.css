@@ -301,7 +301,7 @@ table {
     margin-top: 2rem;
   }
 }
-@media all and (max-width: 575.9px) {
+@media all and (max-width: 767.9px) {
   .intro {
     height: auto;
   }
@@ -331,7 +331,7 @@ table {
 .about__text-item {
   margin-top: 1rem;
 }
-.about__wrap {
+.about__wrap-img {
   padding-left: 3rem;
 }
 .about__header {
@@ -347,6 +347,30 @@ table {
   height: 50vh;
 }
 
+@media all and (max-width: 767.9px) {
+  .about__header {
+    margin: 4rem 0 2rem;
+  }
+  .about__presentation {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about__text {
+    width: 80vw;
+    padding: 0;
+  }
+  .about__wrap-img {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .about__img {
+    height: auto;
+    max-width: 60vw;
+  }
+  .about__header-text {
+    font-size: 2.5rem;
+  }
+}
 .stack__list-wrap {
   position: relative;
 }
@@ -368,6 +392,17 @@ table {
   margin: 0 auto;
 }
 
+.logo-nd {
+  width: 9rem;
+}
+
+.logo-ps {
+  height: 5rem;
+}
+
+.logo {
+  height: 6rem;
+}
 .logo__js {
   fill: #f2bf4f;
 }
@@ -420,6 +455,26 @@ table {
   fill: #23596b;
 }
 
+@media all and (max-width: 767.9px) {
+  .stack__header {
+    margin: 4rem 0 2rem !important;
+  }
+  .stack__header-text {
+    font-size: 2.5rem;
+  }
+  .stack__list {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2rem;
+  }
+  .logo, .logo-ps {
+    height: 3rem;
+  }
+  .logo-nd {
+    width: 6rem;
+  }
+}
 .slide-in-right {
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -754,8 +809,41 @@ table {
   color: #D6B65E;
   font-size: 1.5rem;
   font-weight: 800;
+  line-height: 1.4;
 }
 
+@media all and (max-width: 767.9px) {
+  .portfolio__header {
+    margin: 4rem 0 !important;
+  }
+  .portfolio__wrap {
+    margin-top: 4rem !important;
+    flex-direction: column;
+  }
+  .portfolio__text {
+    width: auto;
+    margin-bottom: 2rem !important;
+  }
+  .portfolio__task, .portfolio__task-item {
+    display: none;
+  }
+  .portfolio__info {
+    flex-direction: column;
+    align-items: start;
+  }
+  .teleport_img-appl {
+    display: none;
+  }
+  .portfolio__img {
+    width: 80vw;
+  }
+  .links {
+    margin-top: 2rem;
+  }
+  .links__item {
+    padding: 0 2rem 0 0 !important;
+  }
+}
 .contact {
   text-align: center;
 }
@@ -773,6 +861,18 @@ table {
   margin-top: 4rem;
 }
 
+@media all and (max-width: 767.9px) {
+  .contact {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .contact__email {
+    font-size: 1.5rem;
+  }
+  .contact__text {
+    font-size: 1.5rem;
+  }
+}
 .contact {
   height: 100vh;
 }
@@ -832,7 +932,10 @@ table {
     min-width: 250px;
   }
 }
-@media all and (max-width: 575.9px) {
+@media all and (max-width: 767.9px) {
+  .container {
+    width: 80vw;
+  }
   .intro .arrow {
     display: none;
   }

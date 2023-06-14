@@ -90,7 +90,10 @@ body {
 
 }
 
-@media all and (max-width: 575.9px) {
+@media all and (max-width: 767.9px) {
+  .container {
+    width: 80vw;
+  }
   .intro {
     .arrow {
       display: none;
