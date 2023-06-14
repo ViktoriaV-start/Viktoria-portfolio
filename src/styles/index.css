@@ -465,7 +465,7 @@ table {
   .stack__list {
     width: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
     grid-row-gap: 2rem;
   }
   .logo, .logo-ps {
@@ -909,7 +909,7 @@ table {
 .point {
   vertical-align: bottom;
   margin-right: 1rem;
-  width: 20px;
+  width: 200px;
 }
 
 .point-small {
@@ -929,7 +929,7 @@ table {
 @media all and (max-width: 1139.9px) {
   .container {
     width: 96vw;
-    min-width: 250px;
+    min-width: 200px;
   }
 }
 @media all and (max-width: 767.9px) {
