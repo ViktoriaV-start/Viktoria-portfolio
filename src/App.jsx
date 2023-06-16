@@ -9,8 +9,7 @@ import { PortfolioI } from './components/PortfolioI';
 import { PortfolioII } from './components/PortfolioII';
 import { PortfolioIII } from './components/PortfolioIII';
 import { Contact } from './components/Contact';
-
-
+import { Other } from './components/Other';
 
 
 export const App = () => {
@@ -62,6 +61,10 @@ export const App = () => {
 
       <section className="portfolio-iii">
         <PortfolioIII />
+      </section>
+
+      <section className="other" >
+        <Other />
       </section>
 
       <section className="contact" >

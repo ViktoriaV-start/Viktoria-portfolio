@@ -472,7 +472,7 @@ table {
     height: 3rem;
   }
   .logo-nd {
-    width: 6rem;
+    width: 4.5rem;
   }
 }
 .slide-in-right {
@@ -795,6 +795,7 @@ table {
 }
 .portfolio__img {
   width: 440px;
+  margin-left: 1rem;
 }
 .portfolio__info-wrap {
   background-color: #FFF9F0;
@@ -862,15 +863,14 @@ table {
 }
 
 @media all and (max-width: 767.9px) {
-  .contact {
-    width: 80vw;
-    margin: 0 auto;
-  }
   .contact__email {
     font-size: 1.5rem;
+    margin: 4rem auto;
   }
   .contact__text {
     font-size: 1.5rem;
+    width: 80vw;
+    margin: 0 auto;
   }
 }
 .contact {
@@ -924,6 +924,14 @@ table {
 
 .mt03 {
   margin-top: 0.3rem;
+}
+
+.pt2 {
+  padding-top: 2rem;
+}
+
+.pb2 {
+  padding-bottom: 2rem;
 }
 
 @media all and (max-width: 1139.9px) {
