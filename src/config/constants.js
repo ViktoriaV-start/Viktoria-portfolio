@@ -19,7 +19,8 @@ export const brandShopPresentation = '/Viktoria-portfolio/pdf/Vasilyeva_presenta
 export const chatsGit = 'https://github.com/ViktoriaV-start/React_GB/tree/master';
 export const chatsLink = 'https://viktoriav-start.github.io/React_GB/';
 
-export const teleportGit = 'https://github.com/Vlad777-bit/gbdev-2/tree/dev';
+export const teleportGit = '';
+export const teleportPresentation = '/Viktoria-portfolio/pdf/Teleport.pdf';
 
 export const brandLink = 'https://viktoriav-start.github.io/BEM_shop/';
 export const brandGit = 'https://github.com/ViktoriaV-start/ViktoriaV-start.github.io/tree/main/BEM_shop';
