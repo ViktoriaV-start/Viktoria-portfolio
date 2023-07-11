@@ -51,7 +51,7 @@ export const PortfolioII = () => {
     <div className="portfolio__info-wrap">
       <div className="portfolio__info container">
         <div className="portfolio__stack">
-          PHP, JS, HTML, SCSS, JS async/await, MySQL, Twig
+          PHP, JS, MySQL, Twig
         </div>
 
         <div className="links">

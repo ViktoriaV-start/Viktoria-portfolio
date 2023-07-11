@@ -15,7 +15,7 @@ export const Other = () => {
       
         <div className="portfolio__info">
         <div className="portfolio__stack">
-          JS, Vue.js, HTML, SCSS
+          JS, Vue.js
         </div>
         </div>
 
@@ -44,7 +44,7 @@ export const Other = () => {
       
         <div className="portfolio__info">
         <div className="portfolio__stack">
-          PHP/Laravel, MariaDB, JS async/await, API, Docker, HTML, SCSS
+          PHP/Laravel, MariaDB, API, Docker
         </div>
         </div>
 

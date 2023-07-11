@@ -65,7 +65,7 @@ export const PortfolioI = ({ focusPortfolio }) => {
     <div className="portfolio__info-wrap">
       <div className="portfolio__info container">
         <div className="portfolio__stack">
-          JS/React, PHP/Laravel, HTML, SCSS, Redis, MySQL, Docker
+          JS/React, PHP/Laravel, Redis, MySQL, Docker
         </div>
 
         <div className="links">

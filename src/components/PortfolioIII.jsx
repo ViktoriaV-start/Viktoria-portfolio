@@ -61,7 +61,7 @@ return (
   <div className="portfolio__info-wrap">
     <div className="portfolio__info container">
       <div className="portfolio__stack">
-      JS, React, Redux, HTML, SCSS, Firebase, Material UI, Api
+      JS, React, Redux, Firebase, Api
       </div>
 
       <div className="links">
