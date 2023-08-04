@@ -400,6 +400,10 @@ table {
   height: 5rem;
 }
 
+.logo-ts {
+  height: 5.3rem;
+}
+
 .logo {
   height: 6rem;
 }
@@ -473,6 +477,9 @@ table {
   }
   .logo-nd {
     width: 4.5rem;
+  }
+  .logo-ts {
+    height: 2.8rem;
   }
 }
 .slide-in-right {
