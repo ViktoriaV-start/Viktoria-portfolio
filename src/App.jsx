@@ -39,9 +39,8 @@ export const App = () => {
               focusPortfolio={focusPortfolio}
               focusContact={focusContact}
       />
-      <section className="intro container">
+      
         <Intro handleChangeFocus={handleChangeFocus} focusAbout={focusAbout} />
-      </section>
 
       <section className="about" ref={focusAbout}>
         <About slide={slide} />
