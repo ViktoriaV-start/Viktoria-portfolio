@@ -64,6 +64,7 @@
     //#FFF9F0
     // #e2f8ff;
   }
+
   &__info {
     display: flex;
     justify-content: space-between;
@@ -79,7 +80,7 @@
   }
 }
 
-@media all and (max-width: 767.9px) {
+@media all and (max-width: 1039.9px) {
   .portfolio {
 
     &__header{
@@ -89,6 +90,7 @@
     &__wrap {
       margin-top: 4rem !important;
       flex-direction: column;
+      padding: 0;
     }
 
     &__text {
@@ -103,6 +105,7 @@
     &__info {
       flex-direction: column;
       align-items: start;
+      padding: 1rem 0 3rem;
     }
   }
 
