@@ -856,6 +856,7 @@ table {
 }
 .contact {
   text-align: center;
+  padding-bottom: 50px;
 }
 .contact__text {
   font-size: 1.8rem;
@@ -882,10 +883,6 @@ table {
     margin: 0 auto;
   }
 }
-.contact {
-  height: 100vh;
-}
-
 .container {
   margin: 0 auto;
   width: 1440px;
