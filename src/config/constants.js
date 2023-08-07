@@ -27,3 +27,15 @@ export const brandGit = 'https://github.com/ViktoriaV-start/ViktoriaV-start.gith
 export const brandPresentation = '/Viktoria-portfolio/pdf/Presentation_Vasilyeva.pdf';
 
 export const newsGit = 'https://github.com/ViktoriaV-start/Laravel_news';
+
+export const todoGit = 'https://github.com/ViktoriaV-start/Todo';
+export const todoLink = 'https://viktoriav-start.github.io/Todo';
+
+export const calendarGit = 'https://github.com/ViktoriaV-start/Calendar';
+export const calendarLink = 'https://viktoriav-start.github.io/Calendar';
+
+export const wikiGit = 'https://github.com/ViktoriaV-start/wiki-search';
+export const wikiLink = 'https://viktoriav-start.github.io/wiki-search';
+
+export const ghuserGit = 'https://github.com/ViktoriaV-start/search-gh-user';
+export const ghuserLink = 'https://viktoriav-start.github.io/search-gh-user';
