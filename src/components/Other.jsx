@@ -1,4 +1,4 @@
-import { brandGit, brandLink, brandPresentation, calendarGit, calendarLink, ghuserGit, ghuserLink, newsGit, teleportGit, todoGit, todoLink, wikiGit, wikiLink } from "../config/constants";
+import { brandGit, brandLink, brandPresentation, ghuserGit, ghuserLink, newsGit, teleportGit, todoGit, todoLink, visualisationGit, visualisationLink, wikiGit, wikiLink } from "../config/constants";
 import { ReactComponent as LinkIcon } from '../assets/icon-link.svg';
 import { ReactComponent as GhIcon } from '../assets/icon-gh.svg';
 import { ReactComponent as PdfIcon } from '../assets/icon-pdf.svg';
@@ -40,7 +40,7 @@ export const Other = () => {
     </section>
     </div>
 
-    <div className="portfolio">
+    {/* <div className="portfolio">
     <section className="portfolio__wrap container pt2 pb2">
       <article className="portfolio__text">
         <p><span className="portfolio__name">Calendar</span><span className="portfolio__brief"> Страница недельного календаря</span></p>
@@ -64,6 +64,34 @@ export const Other = () => {
 
       <div className="portfolio__images">
         <img className="teleport_img-home portfolio__img" src="/Viktoria-portfolio/img/other/calendar.png" alt="calendar" />
+      </div>
+    </section>
+    </div> */}
+
+<div className="portfolio">
+    <section className="portfolio__wrap container pt2 pb2">
+      <article className="portfolio__text">
+        <p><span className="portfolio__name">Sorting Visualization</span><span className="portfolio__brief"> Визуализация 5-ти сортировок: пузырьковая, выбором, вставками, слиянием и быстрая сортировки</span></p>
+      
+        <div className="portfolio__info">
+          <div className="portfolio__stack">
+            JS
+          </div>
+        </div>
+
+        <div className="links">
+          <a href={visualisationLink} className="links__item" referrerPolicy="no-referrer">
+            <LinkIcon />
+          </a>
+          <a href={visualisationGit} className="links__item" referrerPolicy="no-referrer">
+            <GhIcon />
+          </a>
+        </div>
+      
+      </article>
+
+      <div className="portfolio__images">
+        <img className="teleport_img-home portfolio__img" src="/Viktoria-portfolio/img/other/vis.png" alt="calendar" />
       </div>
     </section>
     </div>

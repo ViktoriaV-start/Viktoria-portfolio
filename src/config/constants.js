@@ -39,3 +39,6 @@ export const wikiLink = 'https://viktoriav-start.github.io/wiki-search';
 
 export const ghuserGit = 'https://github.com/ViktoriaV-start/search-gh-user';
 export const ghuserLink = 'https://viktoriav-start.github.io/search-gh-user';
+
+export const visualisationGit = 'https://github.com/ViktoriaV-start/ViktoriaV-start.github.io/tree/main/sorting';
+export const visualisationLink = 'https://viktoriav-start.github.io/sorting/';
