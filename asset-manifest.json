@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Viktoria-portfolio/static/css/main.ba0fa391.css",
-    "main.js": "/Viktoria-portfolio/static/js/main.a41abf7a.js",
+    "main.css": "/Viktoria-portfolio/static/css/main.c9cde5a6.css",
+    "main.js": "/Viktoria-portfolio/static/js/main.f5e076f6.js",
     "static/media/icon-gh.svg": "/Viktoria-portfolio/static/media/icon-gh.45da502899f4e41e78ade37620ec0ede.svg",
     "index.html": "/Viktoria-portfolio/index.html",
     "static/media/icon-link.svg": "/Viktoria-portfolio/static/media/icon-link.4492e45c325994bfe6edd9f9f357688e.svg",
     "static/media/icon-pdf.svg": "/Viktoria-portfolio/static/media/icon-pdf.f245f07964189ddfc472e6f9e9effed2.svg",
-    "main.ba0fa391.css.map": "/Viktoria-portfolio/static/css/main.ba0fa391.css.map",
-    "main.a41abf7a.js.map": "/Viktoria-portfolio/static/js/main.a41abf7a.js.map"
+    "main.c9cde5a6.css.map": "/Viktoria-portfolio/static/css/main.c9cde5a6.css.map",
+    "main.f5e076f6.js.map": "/Viktoria-portfolio/static/js/main.f5e076f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba0fa391.css",
-    "static/js/main.a41abf7a.js"
+    "static/css/main.c9cde5a6.css",
+    "static/js/main.f5e076f6.js"
   ]
 }
