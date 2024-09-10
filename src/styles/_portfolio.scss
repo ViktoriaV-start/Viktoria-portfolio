@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 7rem !important;
+    margin-top: 4rem !important;
     padding: 2rem;
   }
 
@@ -40,7 +40,7 @@
     //#4FA19F
   }
 
-  &__brief, &__task {
+  &__brief, &__task, &__work {
     color: #4a7989;
     font-size: 1.5rem;
     font-weight: 900;

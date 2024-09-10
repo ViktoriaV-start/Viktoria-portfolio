@@ -67,10 +67,10 @@ return (
       </div>
 
       <div className="links">
-        <a href={chatsLink} className="links__item" referrerPolicy="no-referrer">
+        <a href={chatsLink} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
           <LinkIcon />
         </a>
-        <a href={chatsGit} className="links__item" referrerPolicy="no-referrer">
+        <a href={chatsGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
           <GhIcon />
         </a>
         

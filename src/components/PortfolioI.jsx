@@ -1,6 +1,5 @@
 import { teleportGit, teleportPresentation } from "../config/constants";
 import { Point } from "./Point";
-import { ReactComponent as LinkIcon } from '../assets/icon-link.svg';
 import { ReactComponent as GhIcon } from '../assets/icon-gh.svg';
 import { ReactComponent as PdfIcon } from '../assets/icon-pdf.svg';
 
@@ -72,7 +71,7 @@ export const PortfolioI = ({ focusPortfolio }) => {
 				</div>
 
 				<div className="links">
-					<a href={teleportGit} className="links__item" referrerPolicy="no-referrer">
+					<a href={teleportGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
 						<GhIcon />
 					</a>
 					<a href={teleportPresentation} className="links__item" referrerPolicy="no-referrer">

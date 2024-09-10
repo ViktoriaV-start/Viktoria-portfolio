@@ -58,13 +58,13 @@ export const PortfolioII = () => {
         </div>
 
         <div className="links">
-          <a href={brandShopLink} className="links__item" referrerPolicy="no-referrer">
+          <a href={brandShopLink} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
             <LinkIcon />
           </a>
-          <a href={brandShopGit} className="links__item" referrerPolicy="no-referrer">
+          <a href={brandShopGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
             <GhIcon />
           </a>
-          <a href={brandShopPresentation} className="links__item" referrerPolicy="no-referrer">
+          <a href={brandShopPresentation} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
             <PdfIcon />
           </a>
         </div>

@@ -772,7 +772,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 7rem !important;
+  margin-top: 4rem !important;
   padding: 2rem;
 }
 .portfolio__text {
@@ -789,7 +789,7 @@ table {
   font-family: "Montserrat", sans-serif;
   color: #D6B65E;
 }
-.portfolio__brief, .portfolio__task {
+.portfolio__brief, .portfolio__task, .portfolio__work {
   color: #4a7989;
   font-size: 1.5rem;
   font-weight: 900;
@@ -938,6 +938,10 @@ table {
 
 .pb2 {
   padding-bottom: 2rem;
+}
+
+.wb__img {
+  width: 250px;
 }
 
 @media all and (max-width: 1439.9px) {
