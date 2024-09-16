@@ -71,7 +71,7 @@ export const PortfolioI = ({ focusPortfolio }) => {
 				</div>
 
 				<div className="links">
-					<a href={teleportGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+					<a href={teleportGit} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
 						<GhIcon />
 					</a>
 					<a href={teleportPresentation} className="links__item" referrerPolicy="no-referrer">

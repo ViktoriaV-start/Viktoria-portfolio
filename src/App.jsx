@@ -50,11 +50,6 @@ export const App = () => {
         <Stack handleChangeFocus={handleChangeFocus} slide={slide} />
       </section>
 
-      <section className="portfolio-i">
-        <Work />
-      </section>
-
-
       <section>
         <PortfolioI focusPortfolio={focusPortfolio} />
       </section>

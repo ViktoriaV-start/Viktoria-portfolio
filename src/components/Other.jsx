@@ -22,10 +22,10 @@ export const Other = () => {
         </div>
 
         <div className="links">
-          <a href={visualisationLink} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={visualisationLink} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <LinkIcon />
           </a>
-          <a href={visualisationGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={visualisationGit} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <GhIcon />
           </a>
         </div>
@@ -50,10 +50,10 @@ export const Other = () => {
         </div>
 
         <div className="links">
-          <a href={liftLink} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={liftLink} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <LinkIcon />
           </a>
-          <a href={liftGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={liftGit} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <GhIcon />
           </a>
         </div>
@@ -77,10 +77,10 @@ export const Other = () => {
         </div>
 
         <div className="links">
-          <a href={todoLink} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={todoLink} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <LinkIcon />
           </a>
-          <a href={todoGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={todoGit} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <GhIcon />
           </a>
 
@@ -106,10 +106,10 @@ export const Other = () => {
         </div>
 
         <div className="links">
-          <a href={wikiLink} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={wikiLink} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <LinkIcon />
           </a>
-          <a href={wikiGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={wikiGit} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <GhIcon />
           </a>
         </div>
@@ -136,10 +136,10 @@ export const Other = () => {
         </div>
 
         <div className="links">
-        <a href={ghuserLink} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+        <a href={ghuserLink} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <LinkIcon />
           </a>
-          <a href={ghuserGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={ghuserGit} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <GhIcon />
           </a>
 
@@ -166,13 +166,13 @@ export const Other = () => {
         </div>
 
         <div className="links">
-          <a href={brandLink} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={brandLink} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <LinkIcon />
           </a>
-          <a href={brandGit} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={brandGit} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <GhIcon />
           </a>
-          <a href={brandPresentation} className="links__item" target="_blank" referrerPolicy="noopener" rel="noreferrer">
+          <a href={brandPresentation} className="links__item" target="_blank" referrerpolicy="noreferrer" rel="noopener">
             <PdfIcon />
           </a>
         </div>
