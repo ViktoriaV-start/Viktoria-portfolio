@@ -3,14 +3,12 @@ const lightThemeBtn = document.querySelector(
 );
 const darkThemeBtn = document.querySelector('.header__theme-button_type_dark');
 
-window.onload = () => {
-  const themeInLocal = localStorage.getItem('theme');
-  if (themeInLocal) {
-    setDarkTheme();
-  } else {
-    setLightTheme();
-  }
-};
+const themeInLocal = localStorage.getItem('theme');
+if (themeInLocal) {
+  setDarkTheme();
+} else {
+  setLightTheme();
+}
 
 lightThemeBtn.onclick = () => {
   setLightTheme();
