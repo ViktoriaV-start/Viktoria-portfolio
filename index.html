@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend developer</title>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="icon" href="./images/favicon.ico" sizes="any">
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicon.png">
+  <link rel="stylesheet" href="./styles/norm.css">
+  <link rel="stylesheet" href="./styles/logo.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="page theme_dark">
+
+<div class="start-screen">
+  <img src="./images/kub-gray.png" alt="Сложная конструкция из кубов" class="kub">
+  <span class="start-screen__shine" aria-hidden="true"></span>
+  <nav class="content-section header__menu">
+    <a class="header__logo" href="mailto:web.brew@yandex.ru">
+      <span>web.brew@yandex.ru</span>
+    </a>
+    <ul class="header__theme-toggler">
+      <li>
+        <button class="header__theme-button header__theme-button_type_dark">
+          Тёмная
+        </button>
+      </li>
+      <li>
+        <button class="header__theme-button header__theme-button_type_light header__theme-button_is-active" disabled>
+          Светлая
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <header class="header">
+    <h1 class="header__title heading">ФронтенД</h1>
+  </header>
+</div>
+
+  <div class="progress"></div>
+
+  <script src="./scripts/theme-changer.js"></script>
+  <script src="./scripts/logo.js"></script>
+</body>
+
+
+</html>
